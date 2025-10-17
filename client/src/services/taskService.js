@@ -2,7 +2,7 @@ import axios from 'axios';
 import { getToken } from './authService';
 // The proxy setting in package.json handles the base URL: 
 // It directs requests to http://localhost:5000/api
-const API_URL = '/api/tasks/'; 
+const API_URL = `${process.env.REACT_APP_API_URL}/api/tasks/`; 
 
 // Configuration object to send JWT in headers
 const getConfig = () => ({
